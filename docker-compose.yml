@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  # 1. MongoDB Service (Database)
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+  # 2. Backend Service (API)
+  api:
+    build: ./server
+    ports:
+      - "5000:5000"
+    environment:
+      - PORT=5000
+      - MONGO_URI=mongodb://mongo:27017/resume-builder
+    depends_on:
+      - mongo
+
+  # 3. Frontend Service (React)
+  client:
+    build: ./client
+    ports:
+      - "8080:80"  # Access at localhost:8080
+    depends_on:
+      - api
+
+volumes:
+  mongo-data:

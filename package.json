@@ -1,0 +1,26 @@
+{
+  "name": "ai-resume-builder",
+  "version": "1.0.0",
+  "description": "An intelligent full-stack application that leverages AI to help users generate professional resumes in minutes. Built with the **MERN Stack** (MongoDB, Express.js, React, Node.js).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky",
+    "lint": "npm run lint --prefix client && npm run lint --prefix server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thisisjaymodi/Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/thisisjaymodi/Project/issues"
+  },
+  "homepage": "https://github.com/thisisjaymodi/Project#readme",
+  "devDependencies": {
+    "husky": "^9.1.7"
+  }
+}

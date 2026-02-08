@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { dummyResumeData } from "../assets/assets";
 import ResumePreview from "../components/ResumePreview";
-import Loader from "../components/loader";
+import Loader from "../components/Loader";
 import { ArrowLeftIcon } from "lucide-react";
 import api from "../configs/api";
 import {toast} from "react-hot-toast";
