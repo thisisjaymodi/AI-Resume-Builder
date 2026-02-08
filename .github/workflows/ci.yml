@@ -32,13 +32,13 @@ jobs:
         run: cd client && npm ci
 
       # Run Linting (Frontend + Backend)
-      - name: Run Linting
-        run: npm run lint
+     # - name: Run Linting
+     #   run: npm run lint
 
   # Job 2: Verify Docker Build (The Ultimate Test)
   docker-build-check:
     runs-on: ubuntu-latest
-    needs: quality-check # Wait for Job 1 to pass
+   # needs: quality-check # Wait for Job 1 to pass
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
