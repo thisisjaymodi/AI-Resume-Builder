@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+@import "tailwindcss";
+
+* {
+    font-family: "Google Sans", sans-serif;
+}
+
+@layer base {
+    button {
+        @apply cursor-pointer;
+    }
+
+    input:not([type="checkbox"]) {
+        @apply outline-none focus:ring border border-gray-300 focus:ring-blue-500 focus:border-blue-500 rounded-lg;
+    }
+
+    textarea {
+        @apply outline-none focus:ring border border-gray-300 focus:ring-blue-500 focus:border-blue-500 rounded-lg resize-none;
+    }
+}
