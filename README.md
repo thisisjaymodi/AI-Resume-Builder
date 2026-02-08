@@ -25,12 +25,13 @@ An intelligent full-stack application that leverages AI to help users generate p
 - Cors & Dotenv
 
 ## 📂 Project Structure
-
 ```bash
 AI-Resume-Builder/
 ├── client/         # React Frontend (Vite)
 ├── server/         # Express Backend
 └── README.md       # Project Documentation
+```
+
 
 
 🚀 Getting Started
@@ -94,3 +95,8 @@ Open a Pull Request
 This project is open source and available under the MIT License.
 
 Made in 🍁 with ❤️ by Jay Modi 
+
+
+
+
+
